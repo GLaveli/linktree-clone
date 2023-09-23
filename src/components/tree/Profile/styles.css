@@ -1,0 +1,29 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #1A1A1A; /* Fundo escuro, semelhante ao Linktree */
+  width: 100%;
+  max-width: 350px; /* Largura máxima para manter o design responsivo */
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Imagem de perfil circular */
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço, mantendo o aspecto */
+  margin-bottom: 15px; /* Espaço entre a imagem e o nome */
+  border: 2px solid white; /* Borda branca ao redor da imagem */
+}
+
+.profile-container h2 {
+  font-size: 1.5em;
+  font-weight: 400; /* Peso da fonte não muito pesado */
+  text-align: center;
+  margin: 0; /* Remover margens padrão */
+  color: #fff;
+}

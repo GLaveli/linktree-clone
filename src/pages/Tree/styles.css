@@ -1,0 +1,5 @@
+.treeContainer {
+  display: flex;
+  flex-direction: column; /* Isso garante que os itens estejam um abaixo do outro */
+  align-items: center; /* Isso centraliza os itens horizontalmente */
+}
