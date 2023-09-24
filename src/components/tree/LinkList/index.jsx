@@ -7,11 +7,12 @@ function LinkList({ links }) {
     <div className="link-list">
       {links.map((url, index) => {
         return (
-          <>
-            <LinkItem title={url.title} url={url.url} key={index} />
-          </>
+          <div key={index}>
+            <LinkItem title={url.title} url={url.url} />
+          </div>
         )
-      })}
+      }
+      )}
     </div>
   );
 }

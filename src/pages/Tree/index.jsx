@@ -2,16 +2,17 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import LinkList from '../../components/tree/LinkList';
 import Profile from '../../components/tree/Profile';
-import data from '../../database/mockup-db.json';
+import { useData } from '../../contexts/DataUserContext';
 import './styles.css';
 
 
 function Tree() {
+  const data = useData();
   const { channel } = useParams();
   const userData = data.find(user => user.profile.name.toLowerCase() === channel.toLocaleLowerCase());
 
   if (!userData) {
-    return <h1>User not found!</h1>
+    return <p>User not found!</p>
   }
 
   return (
